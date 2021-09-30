@@ -1,8 +1,16 @@
 package main
 
-improt (
+import (
 	"fmt"
+	"net/http"
 )
+
 func main() {
-	fmt.Println("Hello World")
+	println("server started...")
+
+	http.HandleFunc("/", HelloWorld)
+	http.ListenAndServe(":8080", nil)
+}
+func HelloWorld(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Hello World")
 }
