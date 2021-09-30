@@ -1,5 +1,8 @@
 package main
 
+improt (
+	"fmt"
+)
 func main() {
-	println("Hello World")
+	fmt.Println("Hello World")
 }
