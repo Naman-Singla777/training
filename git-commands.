@@ -1,0 +1,40 @@
+git clone https://github.com/JitenPalaparthi/training.git
+
+git status
+
+git branch
+
+git branch <branch name>
+
+git checkout issue1
+
+# git checkout -b <branch name>
+
+git add <file name>
+
+git commit -m <some message>
+
+git fetch <remote url|name> <branch>
+
+git push <remote url | name> <branch>
+
+git checkout <branch>
+
+## merging
+
+git pull <remote url | name> main 
+
+# to delete a branch
+git branch -d <name> # can use -D for force delete
+
+# git merge vs git rebase
+
+git pull --rebase origin main
+
+## interactive rebase
+
+git rebase -i HEAD~3
+
+## after changes to force commit the branch
+
+git push <url> <branch> -f
